@@ -1,0 +1,368 @@
+/* 公共样式表css */
+html,body {
+    color: #333;
+    margin: 0;
+    height: 100%;
+    font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #666;
+    font-family: "微软雅黑","宋体";
+    background: #f6f6f6;
+}
+
+html, body, div, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, button, fieldset, form, input, legend, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #08acee;
+}
+
+button {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+}
+
+a:hover {
+    color: #eee;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+}
+
+/* 必要布局样式css */
+header{
+  height: 63px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  background-color: #80d1ec;
+  margin-bottom: 20px;
+}
+header img{
+  width: 50px;
+  height: 50px;
+  margin-top:13px;
+  margin-left: 50px;
+  margin-right: 20px;
+  position: relative; 
+  transform-style: preserve-3d;
+  animation: box_ani 6s linear infinite;
+}
+header .ui{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+} 
+a{
+    text-decoration: none;
+}
+@keyframes box_ani{
+  0%{
+    transform:rotateZ(0deg);
+  }
+  100%{
+    transform:rotateZ(360deg);
+  }
+}
+.nav{
+  float: right;
+  margin-right: 30px;
+}
+.nav a{
+  display: block;
+  float: left;
+  padding: 0 20px;
+  height: 60px;
+  color: white;
+  font-size: 17px;
+  text-align:center;
+  line-height: 60px;
+}
+.nav a:hover{
+  color: gray;
+  border-bottom: 3px solid #1dafec;
+}
+
+.step-content{
+    background: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 85%;
+}
+
+.step-grid{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.step-box{
+    width:991px;
+}
+.step-box h3{
+    margin: 30px 0;
+}
+
+.step-title{
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", 宋体;
+    color: #72c6eb;
+    font-size: 34px;
+    text-align: center!important;
+    margin-bottom: 30px;
+}
+
+.step-row{
+    position: relative;
+}
+
+.step-row-point{
+    font-size: 14px;
+    color: #666;
+    background: url(../images/line.png) -40px 0 no-repeat;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+}
+
+.step-row-top{
+    top: -3px;
+    left: -5px;
+}
+.step-row-left{
+    background: url(../images/safe_line.png) top left repeat-y;
+    padding-left: 55px;
+    padding-right: 30px;
+}
+
+.step-row li{
+    font-size: 14px;
+    color: #666;
+}
+
+.step-text-fl{
+    display: inline;
+    float: left!important;
+    width: 550px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+}
+
+.step-text-fl h4{
+    font-size: 22px;
+    line-height: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.step-text-fl p{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    text-indent: 2em;
+}
+.step-text-fl p b{
+    font-size: 16px;
+}
+
+.step-text-fr{
+    width: 343px;
+    z-index: 100;
+    position: relative;
+    float: right!important;
+    text-align: right!important;
+    display: inline;
+}
+
+.step-text-fr img{
+    z-index: 100;
+}
+img{
+    width: 180px;
+    height: 180px;
+}
+.step-row-bottom{
+    background: url(../images/about_safe_top.png) no-repeat;
+    width: 991px;
+    height: 118px;
+    z-index: 1;
+}
+
+.step-row-right{
+    background: url(../images/safe_line.png) top right repeat-y;
+    padding-right: 44px;
+    padding-left: 30px;
+}
+
+.step-text-fl-fr{
+    width: 343px;
+    z-index: 100;
+    position: relative;
+    text-align: left!important;
+    float: left!important;
+    display: inline;
+}
+
+.step-text-fr-fr{
+    width: 550px;
+    font-size: 14px;
+    color: #666;
+    float: right!important;
+    display: inline;
+}
+
+.step-text-fr-fr h4{
+    font-size: 26px;
+    color: #333;
+    font-weight: 500;
+}
+
+.step-text-fr-fr p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-indent: 2em;
+}
+
+.step-row-bottom-one{
+    background: url(../images/about_safe_bottom.png) no-repeat;
+    width: 991px;
+    height: 117px;
+}
+
+.step-row-bot{
+    bottom: -3px;
+    left: -5px;
+    top: inherit;
+}
+
+.step-text-fl-head{
+    width: 400px;
+}
+.step-text-fl-head span{
+    display: block;
+    background-color: #edf2f5;
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-indent: 2em;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.step-text-fl-head div{
+    width: 350px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #edf2f5;
+}
+.step-text-fl-head div span{
+    margin: 0;
+}
+.step-text-fl-head div span:last-child{
+    color: #3fada8;
+}
+.step-text-fl-head div p{
+    margin: 0;
+}
+.step-text-fr-end{
+    box-sizing: border-box;
+    width: 448px;
+    height: 400px;
+    background-color:  #edf2f5;
+    padding: 10px 30px;
+    border-radius: 12px;
+}
+.step-text-fr-end h2{
+    text-align: center;
+    line-height: 50px;
+}
+.step-text-fr-end div{
+    width: 100%;
+
+}
+
+/*插件*/
+.txtMarquee-top{
+    height: 400px;
+}
+.bd{
+    border-radius: 12px;
+}
+.infoList {
+    width: 448px;
+    background-color: #ebebeb;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.infoList li{
+    width: 100%;
+    line-height: 30px;
+}
+.infoList li span{
+    float: left;
+    margin-left: 30px;
+}
+.infoList li a{
+    margin-right: 100px;
+}
+
+.bd02{
+    margin-top: 20px;
+}
